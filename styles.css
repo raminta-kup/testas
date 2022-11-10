@@ -1,0 +1,128 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.main-content {
+    margin: 80px 20px;
+
+}
+
+div.main-content>section {
+    padding: 45px 45px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.section-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 2% 2% 0 0;
+}
+
+.section-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.section-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 2% 2%;
+}
+
+.section-description {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    color: hsla(0, 0%, 100%, 0.819);
+    margin-bottom: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.header-name {
+    color: hsl(0, 0%, 95%);
+    font-size: 36px;
+    margin: 30px 0;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid transparent;
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.button1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.button2:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.button3:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content {
+        display: flex;
+        width: 70%;
+        margin: 0;
+    }
+
+    .section-1 {
+        border-radius: 2% 0 0 2%;
+    }
+
+    .section-3 {
+        border-radius: 0 2% 2% 0;
+    }
+
+    .section-description {
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main-content {
+        width: 60%;
+    }
+}
